@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portada</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+
+    <script src="JS/validar.js"></script>
+    
+    <header> 
+        <div class="head_1"> 
+
+            
+            
+            <!--Botonera nav-->
+            <nav class="barr_nav"> 
+                <ul>
+                    <li><button><a href="index.html">Home</a></button></li>
+                    <li><button><a href="#">Profesionales</a></button></li>
+                    <li><button><a href="#">Utilidades</a></button></li>
+                    <li><button><a href="">Nosotros</a></button></li>
+                </ul>
+            </nav> 
+        </div>
+        
+    </header>
+    
+    <!--Banner-->
+    <div class="banner">
+        <img src="images/My project-1(1).png" alt="">
+    </div>
+
+    <!--<div class="presentacion">
+        <p class="pres_1">En clínica Regional Rio Cuarto, nos complace ser el prestador <strong><em>Número 1</em></strong>  en atencion clínica.</p>
+    </div>
+-->
+<!--Ingreso de usuario-->
+    <form action="" class="loguear" onsubmit="return validar()";>
+
+            <div class="usr__data">
+                <label for="usuario" >Usuario</label>
+                <input type="text" id="usuario" class="logIn__user" placeholder="Usuario" style="text-align: center;">
+            </div>   
+
+            <div class="usr__data">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" class="logIn__pass" placeholder="Contraseña" style="text-align: center;">
+            </div>
+   
+
+        <!--Boton enviar-->
+        <div class="send__form">
+            <input type="submit" id="enviar" class="enviar_form" value="Enviar" >
+        </div>
+    
+    
+    </form>
+
+    
+    
+
+    <!--Enviar y no registrado-->
+    
+
+    <div class="reg__required">
+        <a href="html/turnos.html" class="reg__none">¿Aun no esta registrado?</a>
+    </div>
+    
+
+
+    <!--Presentacion-->
+    <div class="presentacion_2">
+        <p class="pres_2"> "Somos un grupo de personas enfocadas en que usted y su mejor amigo, obtengan todo lo que necesitan."</p>
+        <br>
+    </div>
+    
+    
+    <main>
+        <ul class="prod">
+            <li>
+                <a href="html/turnos.html">
+                    <h2>Turnos</h2>
+                    <img src="images/turnos.jpg" alt="turnos">
+                    <p class="detalle">Programe aquí su turno de manera rapida y sencilla.</p>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <h2>Emergencias</h2>
+                    <img src="images/adimc.jpg" alt="adimc">
+                    <p class="detalle">Contactos de rápida respuesta para animales.</p>
+                </a>
+
+            </li>
+
+            <li>
+                <a href="html/contacto.html">
+                    <h2>Contacto</h2> 
+                    <img src="images/contact-g7aa31672f_640.jpg" alt="contacto">
+                    <p class="detalle">Si tenés algo para contarnos, acá te dejamos el medio.</p>
+                </a>
+            </li>
+
+          
+        </ul>
+    </main>
+    
+
+
+    <footer>
+        <p class="direccion">
+            <ul class="dire">
+                <li>Dirección: Calle Falsa 123</li>
+                <li>Teléfono: 3584-123456</li>
+                <li>Correo electrónico: CaC@yomomma.com</li>
+                <li>(5800)</li>
+                <li>Rio Cuarto - Córdoba</li>
+            </ul>
+        </p>
+        <div class="redes">
+            <a href="#" target="_Blank"><img src="images/feis.png" alt="facebook"></a>
+            <a href="#" target="_Blank"><img src="images/instagram.png" alt="instagram"></a>
+            <a href="#" target="-Blank"><img src="images/twitter.png" alt="twitter"></a>
+            <a href="#" target="_blank"><img src="images/linkedIn.png" alt="linkedIn"></a>
+        </div>
+        <div class="copy">
+
+        </div>
+
+        <div class="derechos">
+            <p class="derechos__dec">Copyright &copy; - 2022</p>
+        </div>
+
+    </footer>
+    
+    
+</body>
+</html>

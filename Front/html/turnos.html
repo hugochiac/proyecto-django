@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnos</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/turnos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+
+    <script src="../JS/formulario.js"></script>
+
+    <header>  
+        <div class="head_1">
+                 
+            <nav class="barr_nav"> <!--Botonera nav-->
+                <ul>
+                    <li><button><a href="../index.html">Home</a></li></button>
+                    <li><button><a href="#">Profesionales</a></li></button>
+                    <li><button><a href="#">Utilidades</a></li></button>
+                    <li><button><a href="">Nosotros</a></li></button>
+                </ul>
+            </nav> 
+        </div>
+        
+    </header>
+    
+    <div class="banner"> <!--Banner imagen-->
+        <img src="../images/My project-1(1).png" alt="">
+    </div>
+
+    <div class="data"> <!--Banner mensaje-->
+        <p>Empezaremos por crear el usuario</p>
+    </div>
+
+    <fieldset>
+        
+        <form action="" class="formulario" id="formulario">
+            
+            <!--Grupo Nombre y apellido-->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre y Apellido</label>
+                    <div class="formulario__grupo_input">
+                        <input type="text" name="nombre" id="nombre" placeholder="Ejemplo: Juán Pérez" class="formulario__input" style="text-align: center;" >
+                        <i class="formulario__validacion_estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input_error">El nombre y apellido solo puede contener letras.</p>
+            </div>
+
+            <!--Grupo Usuario-->
+            <div class="formulario__grupo" id="grupo__usuario">
+                <label for="usuario" class="formulario__label">Usuario</label>
+                    <div class="formulario__grupo_input">
+                        <input type="text" name="usuario" id="usuario" placeholder="Ejemplo: Juán1234" class="formulario__input" style="text-align: center;" >
+                        <i class="formulario__validacion_estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input_error">El usuario debe de 4 a 16 dígitos y solo puede tener números, letras y guión bajo.</p>
+            </div>
+            
+            
+            <!--Grupo contraseña-->
+            <div class="formulario__grupo" id="grupo__password">
+                <label for="contraseña" class="formulario__label">Contraseña</label>
+                    <div class="formulario__grupo_input">
+                        <input type="password" name="password" id="contraseña" class="formulario__input" style="text-align: center;" >
+                        <i class="formulario__validacion_estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input_error">La contraseña debe contener entre 6 y 12 dígitos.</p>
+            </div>
+                
+                
+            <!--Grupo contraseña 2-->            
+            <div class="formulario__grupo" id="grupo__password2">
+                <label for="contraseña2" class="formulario__label">Repita la Contraseña</label>
+                    <div class="formulario__grupo_input">
+                        <input type="password" name="password" id="contraseña2" class="formulario__input" style="text-align: center;" >
+                        <i class="formulario__validacion_estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input_error">Ambas contraseñas deben ser iguales.</p>
+            </div>
+            
+            <!--Grupo email-->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo_input">
+                    <input type="email" name="correo" id="correo" placeholder="ejemplo@ejemplo.com" class="formulario__input" style="text-align: center;" >
+                    <i class="formulario__validacion_estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input_error">La direccion de correo, solo puede contener letras, puntos, números, guión y guión bajo</p>
+            </div>
+
+            <!--Grupo telefono-->
+            <div class="formulario_grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo_input">
+                    <input type="tel" name="telefono" id="telefono" placeholder="358-4123456" class="formulario__input" style="text-align: center;" >
+                    <i class="formulario__validacion_estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input_error">La direccion de correo, solo puede contener letras, puntos, números, guión y guión bajo</p>
+            </div>
+                
+            <!--Grupo terminos-->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los terminos y condiciones.
+                </label>
+
+            </div>
+                
+            
+            <!--Boton de enviar-->
+            <div class="formulario__grupo formulario__grupo-btn">
+                    <input type="submit" class="formulario__btn" onclick="return enviarFormulario();" value="Registrarme">
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario ha sido eviado exitosamente.</p>
+                </div>
+                    
+        </form> 
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                            <p><i class="fa-solid fa-triangle-exclamation"></i><b>ERROR:</b> por favor, rellena el formulario correctamente.</p>
+                        </div>   
+    
+    
+    </fieldset>
+
+        
+   <!--<script src="../JS/formulario.js"></script>-->
+    
+
+    <footer>
+        <p class="direccion">
+            <ul class="dire">
+                <li>Dirección: Calle Falsa 123</li>
+                <li>Teléfono: 3584-123456</li>
+                <li>Correo electrónico: C@yomomma.com</li>
+                <li>(5800)</li>
+                <li>Rio Cuarto - Córdoba</li>
+            </ul>
+        </p>
+        <div class="redes">
+            <a href="#" target="_Blank"><img src="../images/feis.png" alt="facebook"></a>
+            <a href="" target="_Blank"><img src="../images/instagram.png" alt="instagram"></a>
+            <a href="" target="-Blank"><img src="../images/twitter.png" alt="twitter"></a>
+            <a href="" target="_blank"><img src="../images/linkedIn.png" alt="linkedIn"></a>
+        </div>
+        <div class="copy">
+
+        </div>
+
+        <div class="derechos">
+            <p class="derechos__dec">&copy; Copyright <a href="mailto:in.byte.me87@gmail.com"> Vagrant</a> - 2022</p>
+        </div>
+        
+
+    </footer>
+
+
+
+
+    
+</body>
+</html>
