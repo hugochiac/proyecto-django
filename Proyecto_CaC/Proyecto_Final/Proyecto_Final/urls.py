@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# Defino las rutas a nivel aplicación.
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('turnos/', include('turnos.urls')),
